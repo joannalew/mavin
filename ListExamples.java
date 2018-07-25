@@ -4,6 +4,7 @@ public class ListExamples {
 	public static void main(String[] args) {
 		// ArrayList "add" Method
 		// arrayList.add(element) - adds element to back of list
+		// returns true if successful; false if not successful
 		ArrayList<Integer> myList = new ArrayList<Integer>();
 		System.out.println("Creating the list");
 		for (int i = 1; i < 14; i++) {
@@ -13,6 +14,7 @@ public class ListExamples {
 				
 		// ArrayList "set" Method
 		// arrayList.set(index, element) - changes arrayList[index] = element
+		// returns the element that was at index before replaced
 		System.out.println("Changing element values in the list");
 		myList.set(5, 100);
 		myList.set(0, 5893);
@@ -20,6 +22,7 @@ public class ListExamples {
 				
 		// ArrayList "remove" Method
 		// arrayList.remove(index) - removes the element at the index
+		// returns the element that was removed
 		// Note: the array size changes because an element was removed
 		System.out.println("Removing elements from the list");
 		System.out.println("The size of the list is: " + myList.size());
@@ -28,18 +31,24 @@ public class ListExamples {
 		System.out.println("The size of the list is: " + myList.size());
 				
 		// ArrayList "get" Method
-		// arrayList.get(index) - returns the element at arrayList[index]
+		// arrayList.get(index) - get the element at that index
+		// returns the element at arrayList[index]
 		System.out.println("The element at index 2 is: " + myList.get(2));
 		System.out.println("The element at index 5 is: " + myList.get(5));
 		System.out.println();
 				
 		// ArrayList "add" Method (inserting an element in an index)
 		// arrayList.add(index, element) - inserts the element into that index
+		// returns nothing (void)
 		// Note: all elements after that index are shifted down one index
 		System.out.println("Inserting elements into the list");
 		myList.add(2, 999);
 		myList.add(0, 843);
 		System.out.println(myList.toString());
+		
+		/*******************************************************/
+		/** methods below are extra - probably not on AP Exam **/
+		/*******************************************************/
 				
 		// ArrayList "contains" Method
 		// arrayList.contains(element) - returns true if element is in list
